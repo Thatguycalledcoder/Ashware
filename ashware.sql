@@ -34,6 +34,7 @@ CREATE TABLE Courses(
     Course_name VARCHAR(100) NOT NULL,
     Course_desc TEXT NOT NULL,
     Course_lecturer INT NOT NULL,
+    Course_image BLOB,
     PRIMARY KEY(Course_id),
     FOREIGN KEY(Course_lecturer) REFERENCES Lecturers(Lecturer_id)
 );
@@ -48,6 +49,8 @@ CREATE TABLE Enrollments(
 CREATE TABLE Lessons(
 	Lesson_id INT NOT NULL AUTO_INCREMENT,
     Course_id INT NOT NULL,
+    Lesson_title TEXT NOT NULL,
+    Lesson_desc TEXT NOT NULL,
     PRIMARY KEY(Lesson_id, Course_id),
     FOREIGN KEY(Course_id) REFERENCES Courses(Course_id)
 );
