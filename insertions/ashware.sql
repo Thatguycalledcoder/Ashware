@@ -8,7 +8,7 @@ CREATE TABLE Students (
     Fname VARCHAR(60) NOT NULL,
     Lname VARCHAR(60) NOT NULL,
     Email VARCHAR(100) NOT NULL, 
-    Studentpassword VARCHAR(70) NOT NULL,
+    Studentpassword VARCHAR(80) NOT NULL,
     PRIMARY KEY(Student_id)
 );
 
