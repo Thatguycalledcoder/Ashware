@@ -4,15 +4,12 @@ session_start();
 $password = "";
 $email    = "";
 $errors = array(); 
-$crud = new CRUD;
-$db = $crud->database; 
 
-$db = mysqli_connect('localhost', 'root', '', 'ashware');
 // LOGIN USER
 if (isset($_POST['login_user'])) 
 {
-  $email = mysqli_real_escape_string($db, $_POST['email']);
-  $password = mysqli_real_escape_string($db, $_POST['password']);
+  $email = htmlspecialchars($_POST['email']);
+  $password = htmlspecialchars($_POST['password']);
 
   if (empty($email)) 
   {
