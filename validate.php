@@ -24,7 +24,7 @@ if (isset($_POST['login_user']))
   {
   	$password = password_hash($password, PASSWORD_DEFAULT);
   	$result = validateLogin($email);
-  	if ($result["Email"] == $email) {
+  	if (password_verify($result["Studentpassword"], $password)) {
   	    $_SESSION['username'] = $result["Fname"] . " " . $result["Lname"];
         $_SESSION['id'] = $result["Student_id"];
   	    $_SESSION['success'] = "You are now logged in";

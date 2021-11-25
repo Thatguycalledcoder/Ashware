@@ -8,7 +8,7 @@
         function validateLogin($email) {
             $sql = "SELECT * 
                     FROM Students 
-                    WHERE Email='$email'";// AND Studentpassword LIKE '$password'";
+                    WHERE Email='$email'";
             return $this->run_query($sql);
         }
 
