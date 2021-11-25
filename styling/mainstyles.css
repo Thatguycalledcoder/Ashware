@@ -18,12 +18,22 @@
 }
 
 .cardsize {
-    height: 325px;
+    height: 330px;
     width: 215px;
     border-radius: 15px;
+    text-decoration: none;
 }
 
 .coursestatus {
     color: #979797;
     font-size: 11px;
+}
+
+.coursess {
+    text-decoration: none;
+    color: initial;
+}
+
+.coursess:hover {
+    width: 217px;   
 }

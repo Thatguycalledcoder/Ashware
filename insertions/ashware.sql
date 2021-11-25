@@ -8,7 +8,7 @@ CREATE TABLE Students (
     Fname VARCHAR(60) NOT NULL,
     Lname VARCHAR(60) NOT NULL,
     Email VARCHAR(100) NOT NULL, 
-    Studentpassword VARCHAR(60) NOT NULL,
+    Studentpassword VARCHAR(70) NOT NULL,
     PRIMARY KEY(Student_id)
 );
 
@@ -33,7 +33,7 @@ CREATE TABLE Courses(
     Course_name VARCHAR(100) NOT NULL,
     Course_desc TEXT NOT NULL,
     Course_lecturer INT NOT NULL,
-    Course_image BLOB,
+    Course_image VARCHAR(100),
     PRIMARY KEY(Course_id),
     FOREIGN KEY(Course_lecturer) REFERENCES Lecturers(Lecturer_id)
 );

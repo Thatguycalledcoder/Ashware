@@ -30,11 +30,11 @@ VALUES ("Ayorkor", "Korsah", "akorsah@ashesi.edu.gh", 3),
 
 
 INSERT INTO `Courses` (Course_name, Course_desc, Course_lecturer, Course_image)
-VALUES ("Data Structures and Algorithms", "Introduces you to higher level programming efficiencies through application of data structures such us stacks, queues, etc.", 1, LOAD_FILE("DSA.png")),
-("Artificial Intelligence", "It is the science and engineering of making intelligent machines, especially intelligent computer programs, for the automation of processes.", 1, LOAD_FILE("AI.png")),
-("Database Systems", "It is the science and engineering of making intelligent machines, especially intelligent computer programs, for the automation of processes.", 3, LOAD_FILE("EthHack.png")),
-("Human Computer Interaction", "Introduces you to higher level design approaches through application of design principles for efficient solutions.", 8, LOAD_FILE("HCI.png")),
-("Web Technologies", "Learn the means by which computers communicate with each other, and the technologies that make up the internet", 3, LOAD_FILE("webtech.jpeg"));
+VALUES ("Data Structures and Algorithms", "Introduces you to higher level programming efficiencies through application of data structures such us stacks, queues, etc.", 1, "http://localhost/Ashware/insertions/DSA.png"),
+("Artificial Intelligence", "It is the science and engineering of making intelligent machines, especially intelligent computer programs, for the automation of processes.", 1, "http://localhost/Ashware/insertions/AI.png"),
+("Database Systems", "It is the science and engineering of making intelligent machines, especially intelligent computer programs, for the automation of processes.", 3, "http://localhost/Ashware/insertions/EthHack.png"),
+("Human Computer Interaction", "Introduces you to higher level design approaches through application of design principles for efficient solutions.", 8, "http://localhost/Ashware/insertions/HCI.png"),
+("Web Technologies", "Learn the means by which computers communicate with each other, and the technologies that make up the internet", 3, "http://localhost/Ashware/insertions/webtech.jpeg");
 
 
 INSERT INTO `Lessons` (Course_id, Lesson_title, Lesson_desc) 
