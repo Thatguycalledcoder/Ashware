@@ -85,7 +85,7 @@
             return false;
     }
 
-    //Delele function check
+    //Delete function check
     function delete($id) {
         $crud = new CRUD;
         $request = $crud->delete($id);
