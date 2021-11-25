@@ -133,7 +133,7 @@
                                     <img src='. $value["Course_image"].' class="card-img-top" alt=' . $value["Course_name"] .'>
                                     <div class="card-body">                              
                                         <h5 class="card-title coursetitle">' . $value["Course_name"] . '</h5>
-                                        <p class="card-text coursecontent">' . $value["Course_desc"] . '<br>By: ' . $value["Course_lecturer"] . '</p>      
+                                        <p class="card-text coursecontent">' . $value["Course_desc"] . '<br>By: ' . $value["Fname"] .' ' . $value["Lname"] .'</p>      
                                     </div>
                                 </a>
                             </div> 

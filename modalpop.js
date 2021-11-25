@@ -25,12 +25,9 @@ const enroll = (e) => {
         datatype: 'json',
 
         success: function(data) {
-            if (data == true) {
+            if (data == "true") {
                 alert("Enrollment successful!\n Moving to courses page");  
-            }
-            else {
-                alert("Enrollment failed")
-            }       
+            }   
         },
 
         error: function() {

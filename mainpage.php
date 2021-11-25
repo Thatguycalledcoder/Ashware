@@ -32,7 +32,7 @@
          style="width: 185px; background-color: #F8F8F8; border-right: 1px solid #D7D7D7;">
           <span class="fs-4 mb-2">
               <img class="usericon mb-3" src="courseware-assets/usericon.png" alt="usericon">
-              <div class="username">Jane Doe</div>
+              <div class="username"><?php echo $_SESSION["username"]?></div>
             </span>
         <ul class="nav nav-pills flex-column mb-auto mt-5">
             <li class="nav-item">

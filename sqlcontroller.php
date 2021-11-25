@@ -2,9 +2,9 @@
     require "CRUD.php";
 
     //You can add more controllers for the functions created in CRUD.php
-    function validateLogin($email, $password) {
+    function validateLogin($email) {
         $crud = new CRUD;
-        $request = $crud->validateLogin($email, $password);
+        $request = $crud->validateLogin($email);
 
         if($request){
             $record = $crud->fetch();

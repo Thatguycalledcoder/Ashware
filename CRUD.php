@@ -5,10 +5,10 @@
 
     class CRUD extends Database{ 
         
-        function validateLogin($email, $password) {
+        function validateLogin($email) {
             $sql = "SELECT * 
                     FROM Students 
-                    WHERE Email='$email' AND Studentpassword='$password'";
+                    WHERE Email='$email'";// AND Studentpassword LIKE '$password'";
             return $this->run_query($sql);
         }
 
