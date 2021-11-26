@@ -3,12 +3,11 @@ USE ashware;
 -- Value Insertion
 
 INSERT INTO `Students` (Fname, Lname, Email, Studentpassword)
-VALUES ("Excel", "Chukwu", "excel.chukwu@ashesi.edu.gh", "$2y$10$f0wexYvC9cT7EEgBJjYDDePNtMWBBbqlyd8set6uW0IT4.pRFQ3Ve
-"),
-("David", "Quarshie", "david.quarshie@ashesi.edu.gh", "$2y$10$iNwe.XcWiHGiyEgG4IjlYO46ngKEhlkKkwwQFA/NvAzRr7U0OzHdC"),
-("Kekeli", "Mensah", "kekeli.mensah@ashesi.edu.gh", "$2y$10$egI9aXjiiYJr/hErCvXGUOm3ZDjZXONRgyqNAUuIfLX354YjI73Xy"),
-("Elijah", "Boateng", "elijah.boateng@ashesi.edu.gh", "$2y$10$yiE78KrK5QfF1SlE4VvPVOT3Pw9TRxcX3fV5aQQ28SZVW82Ev8dmu"),
-("Joshua", "Owusu-Ansah", "joshua.owusu@ashesi.edu.gh", "$2y$10$6tzzwc5/ava01d1rvs81EeTYc1sqce7.qrcdWidSq4AONCZaPMq8W");
+VALUES ("Excel", "Chukwu", "excel.chukwu@ashesi.edu.gh", "ZXhjZWwuY2h1a3d1"),
+("David", "Quarshie", "david.quarshie@ashesi.edu.gh", "ZGF2aWQucXVhcnNoaWU="),
+("Kekeli", "Mensah", "kekeli.mensah@ashesi.edu.gh", "a2VrZWxpLm1lbnNhaA=="),
+("Elijah", "Boateng", "elijah.boateng@ashesi.edu.gh", "ZWxpamFoLmJvYXRlbmc="),
+("Joshua", "Owusu-Ansah", "joshua.owusu@ashesi.edu.gh", "am9zaHVhLm93dXN1");
 
 
 INSERT INTO `Departments` (Dept_name) 

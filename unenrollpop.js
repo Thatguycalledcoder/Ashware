@@ -12,9 +12,9 @@ exampleModal.addEventListener('show.bs.modal', function (event) {
   // Update the modal's content.
 })
 
-const enroll = (e) => {
+const unenroll = (e) => {
     $.ajax({
-        url: "enrollcourse.php", // server url
+        url: "unenrollCourse.php", // server url
         type: 'POST', //POST or GET 
         async: false,
         data: 
@@ -24,13 +24,8 @@ const enroll = (e) => {
         }, // data to send in ajax format or querystring format
         datatype: 'json',
 
-        success: function(data) {
-            if (data == "true") {
-                alert("Enrollment successful!");  
-            }   
-            if (data == "maybe") {
-                alert("Already enrolled in course!");  
-            }   
+        success: function() {
+                alert("Unenrollment successful!");  
         },
 
         error: function() {
@@ -39,4 +34,5 @@ const enroll = (e) => {
 
     });
     exampleModal.click()
+    window.location.replace("Coursespage.php");
 }

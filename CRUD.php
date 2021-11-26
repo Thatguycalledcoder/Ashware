@@ -5,10 +5,10 @@
 
     class CRUD extends Database{ 
         
-        function validateLogin($email) {
+        function validateLogin($email, $password) {
             $sql = "SELECT * 
                     FROM Students 
-                    WHERE Email='$email'";// AND Studentpassword LIKE '$password'";
+                    WHERE Email='$email' AND Studentpassword = '$password'";// AND Studentpassword LIKE '$password'";
             return $this->run_query($sql);
         }
 
@@ -36,6 +36,7 @@
             return $this->run_query($sql);   
         }
 
+        //Get list of all courses
         function getCourses() {
             $sql = "SELECT c.Course_id ,c.Course_name, c.Course_desc, c.Course_image, l.Fname, l.Lname
             FROM Courses c
@@ -44,6 +45,7 @@
             return $this->run_query($sql);   
         }
 
+        //Get number of lessons for a course
         function Lessons($course_id) {
             $sql = "SELECT COUNT(Lesson_id)
                     FROM Lessons
@@ -51,6 +53,21 @@
             return $this->run_query($sql);          
         }
 
+        //Get list of all lessons for a course
+        function Courselessons($course_id) {
+            $sql = "SELECT *
+                    FROM Lessons
+                    WHERE Course_id = '$course_id'"; 
+            return $this->run_query($sql);          
+        }
+
+        //Check if a person has already enrolled in a course
+        function checkEnrollment($student_id, $course_id) {
+            $sql = "SELECT *
+                    FROM Enrollments
+                    WHERE Student_id = '$student_id' AND Course_id = '$course_id'";
+            return $this->run_query($sql); 
+        }
         //Update SQL function
         function update($id, $value) {
             $sql = "UPDATE TABLE SET COLUMN = '$value' WHERE COLUMN = '$id'";
@@ -58,8 +75,9 @@
         }
 
         //Delete SQL function
-        function delete($id) {
-            $sql = "DELETE FROM TABLE WHERE COLUMN = '$id'";
+        function delete($student_id, $course_id) {
+            $sql = "DELETE FROM Enrollments 
+                    WHERE Student_id = '$student_id' AND Course_id = '$course_id'";
             return $this->run_query($sql);
         }
 

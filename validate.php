@@ -11,8 +11,8 @@ $db = mysqli_connect('localhost', 'root', '', 'ashware');
 // LOGIN USER
 if (isset($_POST['login_user'])) 
 {
-  $email = mysqli_real_escape_string($db, $_POST['email']);
-  $password = mysqli_real_escape_string($db, $_POST['password']);
+  $email = htmlspecialchars($_POST['email']);
+  $password = htmlspecialchars($_POST['password']);
 
   if (empty($email)) 
   {
@@ -25,8 +25,8 @@ if (isset($_POST['login_user']))
 
   if (count($errors) == 0) 
   {
-  	$password = password_hash($password, PASSWORD_DEFAULT);
-  	$result = validateLogin($email);
+  	$password = base64_encode($password);
+  	$result = validateLogin($email, $password);
   	if ($result["Email"] == $email) {
   	    $_SESSION['username'] = $result["Fname"] . " " . $result["Lname"];
         $_SESSION['id'] = $result["Student_id"];

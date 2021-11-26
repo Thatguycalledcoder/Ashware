@@ -18,19 +18,19 @@
     <div class="wrapper">
         <div class="left-pane">
             <div class="container">
-                <img class="logo" src="images/ashesi logo.png" alt="School logo"><br>
-                <img class="study" src="images/login.svg" alt="illustration">
+                <img class="logo" src="courseware-assets/ashesi logo.png" alt="School logo"><br>
+                <img class="study" src="courseware-assets/login.svg" alt="illustration">
             </div>
         </div>
         <div class="right-pane">
             <div class="container">
                 <div class="welcome-text">
+                <?php include('errors.php') ?>
                     <h1>Welcome back!</h1>
                     <h4>Please login to proceed</h4>
                 </div>
                 <div class="login-form">
                     <form method="POST" action="">
-                    <?php include('errors.php') ?>
                         <input type="email" name="email" placeholder="Email"><br>
                         <input type="password" name="password" placeholder="Password">
                         <a href="#">Forgot Password?</a>
