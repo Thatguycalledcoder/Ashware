@@ -7,7 +7,7 @@
 
         function db_connect() {
             //Connect to database
-            $this->database = mysqli_connect(servername, username, password, database);
+            $this->database = mysqli_connect(null, username, password, database, null, instance);
 
             //Check if connection is successful
             if(mysqli_connect_errno()) 

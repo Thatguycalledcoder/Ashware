@@ -1,5 +1,6 @@
 <?php
 define('servername', 'localhost');
-define('username', 'excel');
-define('password', 'Galatians2:20');
-define('database', 'ashware');
+define('username', getenv('CLOUDSQL_USER'));
+define('password', getenv('CLOUDSQL_PASSWORD'));
+define('database', getenv('CLOUDSQL_DB'));
+define('instance', getenv('CLOUDSQL_DSN'));
