@@ -7,7 +7,7 @@ VALUES ("Excel", "Chukwu", "excel.chukwu@ashesi.edu.gh", "ZXhjZWwuY2h1a3d1"),
 ("David", "Quarshie", "david.quarshie@ashesi.edu.gh", "ZGF2aWQucXVhcnNoaWU="),
 ("Kekeli", "Mensah", "kekeli.mensah@ashesi.edu.gh", "a2VrZWxpLm1lbnNhaA=="),
 ("Elijah", "Boateng", "elijah.boateng@ashesi.edu.gh", "ZWxpamFoLmJvYXRlbmc="),
-("Joshua", "Owusu-Ansah", "joshua.ansah@ashesi.edu.gh", "am9zaHVhLmFuc2Fo");
+("Joshua", "Owusu-Ansah", "joshua.owusu@ashesi.edu.gh", "am9zaHVhLm93dXN1");
 
 
 INSERT INTO `Departments` (Dept_name) 

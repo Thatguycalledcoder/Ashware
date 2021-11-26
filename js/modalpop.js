@@ -26,7 +26,10 @@ const enroll = (e) => {
 
         success: function(data) {
             if (data == "true") {
-                alert("Enrollment successful!\n Moving to courses page");  
+                alert("Enrollment successful!");  
+            }   
+            if (data == "maybe") {
+                alert("Already enrolled in course!");  
             }   
         },
 

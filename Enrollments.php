@@ -15,6 +15,8 @@
 
 <?php
     include "sqlcontroller.php";
+
+    //Get all course information
     $courses = getCourses(); 
 ?>
 
@@ -38,12 +40,12 @@
     <div class="nav flex-column flex-shrink-0 p-3 text-black mx-3"
          style="width: 185px; background-color: #F8F8F8; border-right: 1px solid #D7D7D7;">
           <span class="fs-4 mb-2">
-              <img class="usericon mb-3" src="courseware-assets/usericon.png" alt="usericon">
-              <div class="username">Jane Doe</div>
+              <img class="usericon mb-3" src="courseware-assets/usericon2.png" alt="usericon">
+              <div class="username"><?php echo $_SESSION["username"]?></div>
             </span>
         <ul class="nav nav-pills flex-column mb-auto mt-5">
             <li class="nav-item">
-                <a href="mainpage.php" class="nav-link text-danger mb-2 pt-1" aria-current="page">
+                <a href="index.php" class="nav-link text-danger mb-2 pt-1" aria-current="page">
                     <img class="me-3" src="courseware-assets/dashboard-icon.svg">
                     Dashboard
                 </a>
@@ -140,7 +142,6 @@
         </div>
     </div>
 </div>
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"></button>
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -166,7 +167,7 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous">
 </script>
-<script src="modalpop.js"></script>
+<script src="js/modalpop.js"></script>
 
 
 </body>

@@ -2,9 +2,9 @@
     require "CRUD.php";
 
     //You can add more controllers for the functions created in CRUD.php
-    function validateLogin($email) {
+    function validateLogin($email, $password) {
         $crud = new CRUD;
-        $request = $crud->validateLogin($email);
+        $request = $crud->validateLogin($email, $password);
 
         if($request){
             $record = $crud->fetch();
@@ -27,6 +27,21 @@
             return true;
         else
             return false;
+    }
+
+    function getLessonCourses($course_id) {
+        $crud = new CRUD;   
+        $request = $crud->Courselessons($course_id);
+
+        if($request){
+            $posts = array();
+            while($record = $crud->fetch()){
+                $posts[] = $record;
+            }
+            return $posts;
+        }else{
+            return false;
+        }
     }
 
     //Select all function check and controller
@@ -74,6 +89,18 @@
             return false;
     }
 
+    function validateEnrollment($student_id, $course_id) {
+        $crud = new CRUD;   
+        $request = $crud->checkEnrollment($student_id, $course_id);
+
+        if($request) {
+            $result = $crud->fetch();
+            return $result;
+        }
+        else
+            return false;
+    }
+
     //Update function check
     function update($id, $search_result) {
         $crud = new CRUD;
@@ -85,10 +112,10 @@
             return false;
     }
 
-    //Delete function check
-    function delete($id) {
+    //Delele function check
+    function Unenroll($student_id, $course_id) {
         $crud = new CRUD;
-        $request = $crud->delete($id);
+        $request = $crud->delete($student_id, $course_id);
 
         if($request) 
             return true;

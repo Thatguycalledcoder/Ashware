@@ -36,12 +36,12 @@
     <div class="nav flex-column flex-shrink-0 p-3 text-black mx-3"
          style="width: 185px; background-color: #F8F8F8; border-right: 1px solid #D7D7D7;">
           <span class="fs-4 mb-2">
-              <img class="usericon mb-3" src="courseware-assets/usericon.png" alt="usericon">
-              <div class="username">Jane Doe</div>
+              <img class="usericon mb-3" src="courseware-assets/usericon2.png" alt="usericon">
+              <div class="username"><?php echo $_SESSION["username"]?></div>
             </span>
         <ul class="nav nav-pills flex-column mb-auto mt-5">
             <li class="nav-item">
-                <a href="mainpage.php" class="nav-link text-danger mb-2 pt-1" aria-current="page">
+                <a href="index.php" class="nav-link text-danger mb-2 pt-1" aria-current="page">
                     <img class="me-3" src="courseware-assets/dashboard-icon.svg">
                     Dashboard
                 </a>
@@ -129,7 +129,7 @@
                     echo '     
                         <div class="col">
                             <div class="card mb-3 cardsize" style="text-decoration: none;">
-                                <a href=CourseSelection.php?id='.$value["Course_id"].' class="coursess" style="text-decoration: none; color: initial;">
+                                <a href=CourseSelection.php?cid='.$value["Course_id"].' class="coursess" style="text-decoration: none; color: initial;">
                                     <img src='. $value["Course_image"].' class="card-img-top" alt=' . $value["Course_name"] .'>
                                     <div class="card-body">                              
                                         <h5 class="card-title coursetitle">' . $value["Course_name"] . '</h5>

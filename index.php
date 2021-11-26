@@ -31,7 +31,7 @@
     <div class="nav flex-column flex-shrink-0 p-3 text-black mx-3"
          style="width: 185px; background-color: #F8F8F8; border-right: 1px solid #D7D7D7;">
           <span class="fs-4 mb-2">
-              <img class="usericon mb-3" src="courseware-assets/usericon.png" alt="usericon">
+              <img class="usericon mb-3" src="courseware-assets/usericon2.png" alt="usericon">
               <div class="username"><?php echo $_SESSION["username"]?></div>
             </span>
         <ul class="nav nav-pills flex-column mb-auto mt-5">
@@ -67,7 +67,7 @@
                 </a>
             </li>
             <li>
-                <a href="mainpage.php?logout='1'" class="nav-link text-danger mb-2">
+                <a href="index.php?logout='1'" class="nav-link text-danger mb-2">
                     <img class="me-3" src="courseware-assets/logout-icon.svg">
                     Logout
                 </a>
@@ -108,10 +108,11 @@
                 </div>
             </nav>
         </div>
+        <!-- Latest Activity Card -->
         <div id="ltstActivity" class="container mb-5">
             <h5 class="ms-2 titlecard">Latest Activity</h5>
             <div class="card mt-3"
-                 style="width: 950px; border: none; box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1); border-radius: 10px;">
+                 style="width: 75vw; border: none; box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1); border-radius: 10px;">
                 <div class="card-body">
                     <h5 class="card-title">
                         <img src="courseware-assets/Activity-icon.svg" class="me-5">Web Technologies</h5>
@@ -122,8 +123,8 @@
                                 learn web scripting languages and the basics of cloud computing.</p>
                         </div>
                         <div class="col ">
-                            <button type="button" class="btn btn-danger btn-sm mt-3">Continue<img
-                                    src="courseware-assets/continue-arrow.svg" style="width: 20px; padding-left: 5px;">
+                            <button type="button" class="btn btn-danger btn-sm mt-3">Start<img
+                                    src="courseware-assets/continue-arrow.svg" style="width: 20px; padding-left: 5px; margin-left: 10px;">
                             </button>
                         </div>
                     </div>
@@ -138,23 +139,24 @@
                         </div>
                         <div class="col-5">
                   <span class="progress" style="height: 4px; width: 380px; margin-top: 10px;">
-                    <div class="progress-bar" role="progressbar" style="width: 30%; background-color: #1CC600"
+                    <div class="progress-bar" role="progressbar" style="width: 0%; background-color: #1CC600"
                          aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
                   </span>
                         </div>
                         <div class="col-1" style="color: #858585; font-size: 13px;">
-                            <span>30% </span>
+                            <span>0% </span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- Popular Courses Card -->
         <div class="container">
             <h5 class="ms-2 titlecard">Popular Courses</h5>
             <div class="row">
                 <div class="col">
                     <div class="card mb-3 cardsize">
-                        <a class="coursess" href="#">
+                        <a class="coursess" href="Enrollments.php">
                         <img src="courseware-assets/DSA.png" class="card-img-top" alt="Data Structures and Allgorithms">
                         <div class="card-body">
                             <h5 class="card-title coursetitle">Data Structures and Algorithms</h5>
@@ -172,7 +174,7 @@
                 </div>
                 <div class="col">
                     <div class="card mb-3 cardsize">
-                    <a class="coursess" href="#">
+                    <a class="coursess" href="Enrollments.php">
                         <img src="courseware-assets/AI.png" class="card-img-top" alt="Artifical Intelligence">
                         <div class="card-body">
                             <h5 class="card-title coursetitle">Artifical Intelligence</h5>
@@ -190,7 +192,7 @@
                 </div>
                 <div class="col">
                     <div class="card mb-3 cardsize">
-                    <a class="coursess" href="#">
+                    <a class="coursess" href="Enrollments.php">
                         <img src="courseware-assets/EthHack.png" class="card-img-top" alt="Ethical Hacking">
                         <div class="card-body">
                             <h5 class="card-title coursetitle">Ethical Hacking</h5>
@@ -209,7 +211,7 @@
                 </div>
                 <div class="col">
                     <div class="card mb-3 cardsize align-text-bottom">
-                    <a class="coursess" href="#">
+                    <a class="coursess" href="Enrollments.php">
                         <img src="courseware-assets/HCI.png" class="card-img-top" alt="Human Computer Interaction">
                         <div class="card-body">
                             <h5 class="card-title coursetitle">Human Computer Interaction</h5>
