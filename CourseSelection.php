@@ -175,7 +175,7 @@
                                     <span class="progress-bar"></span>
                                 </span>
                                             </div>
-                                            2hrs 15mins left
+                                            1hr left
                                         </div>
                                         <div class="row mb-4">
                                             <img src="courseware-assets/readingscourseicon.svg" class="pb-1 lessonIcons"
@@ -188,7 +188,7 @@
                                     <span class="progress-bar"></span>
                                 </span>
                                             </div>
-                                            4mins left
+                                            50mins left
                                         </div>
                                         <div class="row mb-4">
                                             <img src="courseware-assets/practicescourseicon.svg" class="pb-1 lessonIcons"
@@ -204,16 +204,18 @@
                                             50mins left
                                         </div>
                                     </div>
+                                    <div class="col">
+                                <iframe width="350" height="150" 
+                                src="https://www.youtube.com/embed/YOXwcbwSEUo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
                                 </div>
                             </div>
                         </div>
-                    </div>';
+                    </div>
+                    ';
                     $counter++;
                 }
             ?>
-            <div>
-
-            </div>
         </div>
     </div>
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
