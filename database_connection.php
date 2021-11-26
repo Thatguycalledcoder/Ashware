@@ -1,9 +1,5 @@
 <?php
-    
-    define('servername', 'localhost');
-    define('username', 'root');
-    define('password', '');
-    define('database', 'ashware');
+    include "database_credentials.php";
 
     class Database {
         public $database;
@@ -35,7 +31,7 @@
 
         //Get results
         function fetch() {
-            if($this->result == null || $this->result == false)
+            if($this->result == null)
                 return false;
 
             return mysqli_fetch_assoc($this->result);
