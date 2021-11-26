@@ -67,7 +67,7 @@
                 </a>
             </li>
             <li>
-                <a href="mainpage.php?logout='1'" class="nav-link text-danger mb-2">
+                <a href="index.php?logout='1'" class="nav-link text-danger mb-2">
                     <img class="me-3" src="courseware-assets/logout-icon.svg">
                     Logout
                 </a>
@@ -108,6 +108,7 @@
                 </div>
             </nav>
         </div>
+        <!-- Latest Activity Card -->
         <div id="ltstActivity" class="container mb-5">
             <h5 class="ms-2 titlecard">Latest Activity</h5>
             <div class="card mt-3"
@@ -149,12 +150,13 @@
                 </div>
             </div>
         </div>
+        <!-- Popular Courses Card -->
         <div class="container">
             <h5 class="ms-2 titlecard">Popular Courses</h5>
             <div class="row">
                 <div class="col">
                     <div class="card mb-3 cardsize">
-                        <a class="coursess" href="#">
+                        <a class="coursess" href="Enrollments.php">
                         <img src="courseware-assets/DSA.png" class="card-img-top" alt="Data Structures and Allgorithms">
                         <div class="card-body">
                             <h5 class="card-title coursetitle">Data Structures and Algorithms</h5>
@@ -172,7 +174,7 @@
                 </div>
                 <div class="col">
                     <div class="card mb-3 cardsize">
-                    <a class="coursess" href="#">
+                    <a class="coursess" href="Enrollments.php">
                         <img src="courseware-assets/AI.png" class="card-img-top" alt="Artifical Intelligence">
                         <div class="card-body">
                             <h5 class="card-title coursetitle">Artifical Intelligence</h5>
@@ -190,7 +192,7 @@
                 </div>
                 <div class="col">
                     <div class="card mb-3 cardsize">
-                    <a class="coursess" href="#">
+                    <a class="coursess" href="Enrollments.php">
                         <img src="courseware-assets/EthHack.png" class="card-img-top" alt="Ethical Hacking">
                         <div class="card-body">
                             <h5 class="card-title coursetitle">Ethical Hacking</h5>
@@ -209,7 +211,7 @@
                 </div>
                 <div class="col">
                     <div class="card mb-3 cardsize align-text-bottom">
-                    <a class="coursess" href="#">
+                    <a class="coursess" href="Enrollments.php">
                         <img src="courseware-assets/HCI.png" class="card-img-top" alt="Human Computer Interaction">
                         <div class="card-body">
                             <h5 class="card-title coursetitle">Human Computer Interaction</h5>

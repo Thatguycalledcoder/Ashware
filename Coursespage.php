@@ -41,7 +41,7 @@
             </span>
         <ul class="nav nav-pills flex-column mb-auto mt-5">
             <li class="nav-item">
-                <a href="mainpage.php" class="nav-link text-danger mb-2 pt-1" aria-current="page">
+                <a href="index.php" class="nav-link text-danger mb-2 pt-1" aria-current="page">
                     <img class="me-3" src="courseware-assets/dashboard-icon.svg">
                     Dashboard
                 </a>
