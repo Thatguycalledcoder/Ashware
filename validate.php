@@ -1,5 +1,5 @@
 <?php
-require "sqlcontroller.php.";
+require "sqlcontroller.php";
 session_start();
 $password = "";
 $email    = "";
