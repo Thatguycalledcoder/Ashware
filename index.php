@@ -124,7 +124,7 @@
                         </div>
                         <div class="col ">
                             <a href="Enrollments.php">
-                            <button type="button" class="btn btn-danger btn-sm mt-3">Start<img
+                            <button type="button" class="btn btn-danger btn-sm mt-3">Enroll now<img
                                     src="courseware-assets/continue-arrow.svg" style="width: 20px; padding-left: 5px; margin-left: 10px;">
                             </button>
                             </a>
