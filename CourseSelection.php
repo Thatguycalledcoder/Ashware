@@ -64,13 +64,13 @@
                 </a>
             </li>
             <li class="">
-                <a href="#" class="nav-link text-danger mb-2">
+                <a href="help.php" class="nav-link text-danger mb-2">
                     <img class="me-3" src="courseware-assets/help-icon.svg">
                     Help
                 </a>
             </li>
             <li class="spacedsideicon">
-                <a href="#" class="nav-link text-danger mb-2">
+                <a href="settings.php" class="nav-link text-danger mb-2">
                     <img class="me-3" src="courseware-assets/settings-icon.svg">
                     Settings
                 </a>
