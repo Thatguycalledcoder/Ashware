@@ -31,7 +31,7 @@ if (isset($_POST['login_user']))
   	    $_SESSION['username'] = $result["Fname"] . " " . $result["Lname"];
         $_SESSION['id'] = $result["Student_id"];
   	    $_SESSION['success'] = "You are now logged in";
-  	    header('location: mainpage.php');
+  	    header('location: index.php');
   	}else {
       array_push($errors, sizeof($result));
   		array_push($errors, "Wrong username/password combination");
