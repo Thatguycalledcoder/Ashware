@@ -123,9 +123,11 @@
                                 learn web scripting languages and the basics of cloud computing.</p>
                         </div>
                         <div class="col ">
+                            <a href="Enrollments.php">
                             <button type="button" class="btn btn-danger btn-sm mt-3">Start<img
                                     src="courseware-assets/continue-arrow.svg" style="width: 20px; padding-left: 5px; margin-left: 10px;">
                             </button>
+                            </a>
                         </div>
                     </div>
                     <div class="row ${1| ,row-cols-2,row-cols-3, auto,justify-content-md-center,|}">
